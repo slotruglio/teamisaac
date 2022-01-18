@@ -5,10 +5,10 @@ import { Link, useStaticQuery, graphql } from "gatsby"
 
 const LogoWrap = styled.div`
   margin: auto 0;
-  flex: 0 1 36px;
+  flex: 0 1 150px;
 
-  @media (max-width: 768px) and (orientation: landscape) {
-    flex: 0 1 25px;
+  @media (max-width: 768px) {
+    flex: 0 1 120px;
   }
 `
 const Logo = () => {
@@ -16,12 +16,13 @@ const Logo = () => {
   return (
     <LogoWrap as={Link} to="/">
       <StaticImage
-        src="../images/icon.png"
-        alt="A dinosaur"
+        src="../images/150x50.png"
+        alt="Logo"
         placeholder="blurred"
-        layout="fixed"
-        width={30}
-        height={30}
+        layout="constrained"
+        transformOptions={`fit: "contain"`}
+        width={150}
+        height={50}
       />
     </LogoWrap>
   );
