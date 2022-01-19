@@ -1,5 +1,5 @@
 import * as React from "react"
-import * as Style from "../data/style"
+import * as Style from "../styles/style"
 import Layout from "../components/Layout"
 
 const About = () => {

@@ -1,6 +1,7 @@
+import styled from "styled-components"
 // styles
 export const pageStyles = {
-    color: "#232129",
+    color: "#1c1b1b",
     padding: "5%",
     fontFamily: "-apple-system, Roboto, sans-serif, serif",
 }
@@ -8,9 +9,10 @@ export const headingStyles = {
     marginTop: 0,
     marginBottom: 64,
     maxWidth: 320,
+    color: "#152136"
 }
 export const headingAccentStyles = {
-    color: "#663399",
+    color: "#399797",
 }
 export const paragraphStyles = {
     marginBottom: 48,
@@ -34,7 +36,7 @@ export const listItemStyles = {
 }
 
 export const linkStyle = {
-    color: "#8954A8",
+    color: "#fff",
     fontWeight: "bold",
     fontSize: 16,
     verticalAlign: "5%",
@@ -74,4 +76,40 @@ export const badgeStyle = {
     top: -2,
     marginLeft: 10,
     lineHeight: 1,
+}
+
+export const footerStyle = {
+    height: "15%",
+    width: "100%",
+    position: "absolute",
+    bottom: 0,
+    left:0,
+    background: "#152136",
+    
+    borderUp: "2px solid #33333320",
+    margin: "0 0 0 0",
+    textAlign: "center"
+}
+
+export const copyrightStyle = {
+    fontSize: "14px",
+    color: "#a7b5c1",
+    fontFamily: "-apple-system, Roboto, sans-serif, serif"
+}
+
+export const socialLiStyle = {
+    display: "inline-block",
+    margin: "0 2em 0 0",
+    padding: "0.75em 0 0 0",
+    width:"52px",
+    height:"50px",
+    borderRadius: "50%",
+    background: "#1c2940",
+    boxSizing: "border-box",
+
+}
+
+export const aStyle = {
+    TextDecoration: "none",
+    color: "#399797"
 }
