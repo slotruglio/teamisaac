@@ -1,6 +1,5 @@
 import * as React from "react"
 import * as Style from "../styles/style"
-var sal = require('sal.js')
 // markup
 const IndexPage = () => {
   return (

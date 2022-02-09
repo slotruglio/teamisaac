@@ -85,7 +85,6 @@ export const footerStyle = {
     bottom: 0,
     left:0,
     background: "#152136",
-    
     borderUp: "2px solid #33333320",
     margin: "0 0 0 0",
     textAlign: "center"
