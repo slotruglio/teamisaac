@@ -34,20 +34,28 @@
 :root {
   --primary-bg-color: #eee;
   --secondary-bg-color: #fff;
-  --primary-text-color: #666;
+  --primary-text-color: #32333c;
   --secondary-text-color: #999;
+  --p-text-color: #8a8fa3;
+  --header-color: #fbfbfb;
+  --alternative-color: #d9d9d9;
+  --graybg: #fbfbfb;
 }
 
 body {
   font-family: "Poppins", sans-serif;
   font-weight: normal;
   font-style: normal;
-  color: #8a8fa3; }
+  color: var(--p-text-color); }
   body.active {
-    --primary-bg-color: #222;
-    --secondary-bg-color: #333;
-    --primary-text-color: #fff;
-    --secondary-text-color: #eee;
+    --primary-bg-color: #161e29;
+    --secondary-bg-color: #2f3848;
+    --primary-text-color: #c5d5f3;
+    --secondary-text-color: #9cacc9;
+    --p-text-color: #8a8fa3;
+    --header-color: #505f79;
+    --alternative-color: #d9d9d9;
+    --graybg: #161e29;
   }
 * {
   margin: 0;
@@ -55,6 +63,7 @@ body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
+
 
 img {
   max-width: 100%; }
@@ -83,7 +92,7 @@ h5,
 h6 {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  color: #32333c;
+  color: var(--primary-text-color);
   margin: 0px; }
 
 h1 {
@@ -113,7 +122,7 @@ p {
   font-size: 16px;
   font-weight: 400;
   line-height: 28px;
-  color: #8a8fa3;
+  color: var(--p-text-color);
   margin: 0px; }
   @media (max-width: 767px) {
     p {
@@ -142,7 +151,7 @@ p {
   font-size: 15px;
   line-height: 48px;
   border-radius: 50px;
-  color: #fff;
+  color: var(--secondary-bg-color);
   cursor: pointer;
   z-index: 5;
   -webkit-transition: all 0.3s ease-out 0s;
@@ -156,26 +165,26 @@ p {
   background-color: #2c3c54;
   text-transform: uppercase; }
   .main-btn:hover {
-    background-color: #fff;
-    color: #2c3c54;
-    border-color: #2c3c54; }
+    background-color: var(--secondary-bg-color);
+    color: var(--primary-text-color);
+    border-color: var(--primary-text-color); }
   .main-btn.main-btn-2 {
     background-color: transparent;
-    color: #fff;
-    border-color: #fff;
+    color: var(--secondary-bg-color);
+    border-color: var(--secondary-bg-color);
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none; }
     .main-btn.main-btn-2:hover {
-      background-color: #2c3c54;
-      color: #fff;
-      border-color: #2c3c54; }
+      background-color: var(--primary-text-color);
+      color: var(--secondary-bg-color);
+      border-color: var(--primary-text-color); }
 
 /*===== All Section Title Style =====*/
 .section-title .title {
   font-weight: 700;
   font-size: 45px;
-  color: #000;
+  color: var(--primary-text-color);
   padding-bottom: 20px; }
   @media (max-width: 767px) {
     .section-title .title {
@@ -464,7 +473,7 @@ p {
   -moz-box-shadow: 0px 0px 29px 0px rgba(134, 134, 134, 0.25);
   box-shadow: 0px 0px 29px 0px rgba(134, 134, 134, 0.25);
   padding: 30px 0;
-  background: var(--secondary-bg-color);
+  background-color: var(--secondary-bg-color);
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
   -ms-transition: all 0.3s ease-out 0s;
@@ -489,7 +498,7 @@ p {
       .navigation .navbar .navbar-toggler .toggler-icon {
         width: 30px;
         height: 2px;
-        background-color: #32333c;
+        background-color: var(--primary-text-color);
         margin: 5px 0;
         display: block;
         position: relative;
@@ -520,7 +529,7 @@ p {
         top: 158%;
         left: 0;
         width: 100%;
-        background-color: #fff;
+        background-color: var(--secondary-bg-color);
         z-index: 99;
         -webkit-box-shadow: 0px 10px 15px 0px rgba(134, 134, 134, 0.15);
         -moz-box-shadow: 0px 10px 15px 0px rgba(134, 134, 134, 0.15);
@@ -532,7 +541,7 @@ p {
         top: 158%;
         left: 0;
         width: 100%;
-        background-color: #fff;
+        background-color: var(--secondary-bg-color);
         z-index: 99;
         -webkit-box-shadow: 0px 10px 15px 0px rgba(134, 134, 134, 0.15);
         -moz-box-shadow: 0px 10px 15px 0px rgba(134, 134, 134, 0.15);
@@ -551,7 +560,7 @@ p {
       .navigation .navbar .navbar-nav .nav-item a {
         text-transform: uppercase;
         font-size: 16px;
-        color: #8a8fa3;
+        color: var(--p-text-color);
         font-weight: 500;
         position: relative;
         -webkit-transition: all 0.3s ease-out 0s;
@@ -564,7 +573,7 @@ p {
           content: '';
           width: 3px;
           height: 0;
-          background-color: #2c3c54;
+          background-color: var(--primary-text-color);
           left: 50%;
           top: -50px;
           -webkit-transform: translateX(-50%);
@@ -584,7 +593,7 @@ p {
             .navigation .navbar .navbar-nav .nav-item a::before {
               display: none; } }
       .navigation .navbar .navbar-nav .nav-item.active a, .navigation .navbar .navbar-nav .nav-item:hover a {
-        color: #2c3c54; }
+        color: var(--primary-text-color); }
         .navigation .navbar .navbar-nav .nav-item.active a::before, .navigation .navbar .navbar-nav .nav-item:hover a::before {
           height: 45px; }
 
@@ -594,7 +603,7 @@ p {
   margin-top: 90px;
   position: relative;
   overflow: hidden;
-  background-color: #fbfbfb; }
+  background-color: var(--header-color); }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .header-content {
       height: 550px; } }
@@ -706,7 +715,7 @@ p {
   position: relative; }
   .header-content-right .sub-title {
     font-size: 30px;
-    color: #2c3c54;
+    color: var(--primary-text-color);
     text-transform: uppercase;
     padding-bottom: 15px; }
     @media (max-width: 767px) {
@@ -765,7 +774,7 @@ p {
       content: '';
       width: 100%;
       height: 2px;
-      background-color: #2c3c54;
+      background-color: var(--primary-text-color);
       left: -102.5%;
       top: 50%;
       -webkit-transform: translateY(-50%);
@@ -793,9 +802,9 @@ p {
         transition: all 0.3s ease-out 0s;
         text-align: center; }
         .header-social .header-social-icon ul li a:hover {
-          color: #fff;
-          background-color: #2c3c54;
-          border-color: #2c3c54; }
+          color: var(--secondary-bg-color);
+          background-color: var(--primary-text-color);
+          border-color: var(--primary-text-color); }
 
 /*===========================
         3.ABOUT css 
@@ -833,11 +842,11 @@ p {
         float: left; } }
 .about-content .single-info .info-icon i {
   font-size: 16px;
-  color: #2c3c54; }
+  color: var(--primary-text-color); }
 .about-content .single-info .info-text {
   padding-left: 13px; }
   .about-content .single-info .info-text p span {
-    color: #32333c; }
+    color: var(--primary-text-color); }
 
 .about-skills .skill-item .skill-header {
   position: relative; }
@@ -849,7 +858,7 @@ p {
     top: 0;
     right: 0;
     font-size: 16px;
-    color: #32333c;
+    color: var(--primary-text-color);
     font-weight: 400;
     display: -webkit-flex;
     display: -moz-flex;
@@ -858,14 +867,14 @@ p {
     display: flex; }
     .about-skills .skill-item .skill-header .skill-percentage .count-box {
       font-size: 16px;
-      color: #32333c; }
+      color: var(--primary-text-color); }
 .about-skills .skill-item .skill-bar {
   margin-top: 15px; }
   .about-skills .skill-item .skill-bar .bar-inner {
     width: 100%;
     height: 5px;
     border-radius: 5px;
-    background-color: #d9d9d9;
+    background-color: var(--alternative-color);
     position: relative; }
     .about-skills .skill-item .skill-bar .bar-inner .progress-line {
       position: absolute;
@@ -873,7 +882,7 @@ p {
       left: 0;
       height: 5px;
       border-radius: 5px;
-      background-color: #2c3c54;
+      background-color: var(--primary-text-color);
       -webkit-transition: all 2s ease-out 0s;
       -moz-transition: all 2s ease-out 0s;
       -ms-transition: all 2s ease-out 0s;
@@ -894,8 +903,8 @@ p {
     padding-bottom: 80px; } }
 
 .single-service {
-  background-color: #fff;
-  border: 1px solid #eceff8;
+  background-color: var(--secondary-bg-color);
+  border: 1px solid var(--primary-bg-color);
   border-radius: 5px;
   padding: 25px;
   -webkit-transition: all 0.3s ease-out 0s;
@@ -908,14 +917,14 @@ p {
       padding: 15px; } }
   .single-service .service-icon i {
     font-size: 60px;
-    color: #2c3c54;
+    color: var(--primary-text-color);
     line-height: 56px; }
   .single-service .service-content {
     margin-top: 11px; }
     .single-service .service-content .service-title a {
       font-size: 22px;
       font-weight: 600;
-      color: #32333c;
+      color: var(--primary-text-color);
       margin-bottom: 20px;
       -webkit-transition: all 0.3s ease-out 0s;
       -moz-transition: all 0.3s ease-out 0s;
@@ -923,7 +932,7 @@ p {
       -o-transition: all 0.3s ease-out 0s;
       transition: all 0.3s ease-out 0s; }
       .single-service .service-content .service-title a:hover {
-        color: #2c3c54; }
+        color: var(--primary-text-color); }
   .single-service:hover {
     -webkit-box-shadow: 0px 0px 21px 0px rgba(152, 152, 152, 0.23);
     -moz-box-shadow: 0px 0px 21px 0px rgba(152, 152, 152, 0.23);
@@ -1032,7 +1041,7 @@ p {
       transform: translateY(-50%); }
       .single-work .work-overlay .work-content .work-title {
         font-size: 22px;
-        color: #fff;
+        color: var(--secondary-bg-color);
         font-weight: 60;
         -webkit-transform: translateY(-100%);
         -moz-transform: translateY(-100%);
@@ -1054,7 +1063,7 @@ p {
           content: '';
           width: 60px;
           height: 2px;
-          background-color: #fff;
+          background-color: var(--secondary-bg-color);
           left: 50%;
           -webkit-transform: translateX(-50%);
           -moz-transform: translateX(-50%);
@@ -1076,9 +1085,9 @@ p {
             height: 50px;
             line-height: 50px;
             font-size: 25px;
-            color: #fff;
+            color: var(--secondary-bg-color);
             border-radius: 50%;
-            border: 1px solid #fff;
+            border: 1px solid var(--secondary-bg-color);
             text-align: center;
             -webkit-transition: all 0.3s ease-out 0s;
             -moz-transition: all 0.3s ease-out 0s;
@@ -1086,8 +1095,8 @@ p {
             -o-transition: all 0.3s ease-out 0s;
             transition: all 0.3s ease-out 0s; }
             .single-work .work-overlay .work-content ul li a:hover {
-              background-color: #fff;
-              color: #2c3c54; }
+              background-color: var(--secondary-bg-color);
+              color: var(--primary-text-color); }
           .single-work .work-overlay .work-content ul li:nth-of-type(1) {
             -webkit-transform: translateX(-100%);
             -moz-transform: translateX(-100%);
@@ -1136,7 +1145,7 @@ p {
   border-top-right-radius: 5px; }
   .single-pricing .pricing-package .package-title {
     font-size: 22px;
-    color: #fff;
+    color: var(--secondary-bg-color);
     padding: 25px; }
 .single-pricing .pricing-body {
   border: 1px solid #ddd;
@@ -1148,7 +1157,7 @@ p {
     .single-pricing .pricing-body .pricing-text .price {
       font-size: 30px;
       font-weight: 600;
-      color: #2c3c54;
+      color: var(--primary-text-color);
       padding-top: 15px; }
   .single-pricing .pricing-body .pricing-list {
     padding-top: 30px; }
@@ -1160,21 +1169,21 @@ p {
     padding-top: 25px;
     padding-bottom: 40px; }
     .single-pricing .pricing-body .pricing-btn .main-btn {
-      background-color: #fff;
-      color: #2c3c54; }
+      background-color: var(--secondary-bg-color);
+      color: var(--primary-text-color); }
       .single-pricing .pricing-body .pricing-btn .main-btn:hover {
-        background-color: #2c3c54;
-        color: #fff; }
+        background-color: var(--primary-text-color);
+        color: var(--secondary-bg-color); }
 .single-pricing.active {
   -webkit-box-shadow: 0px 0px 21px 0px rgba(152, 152, 152, 0.23);
   -moz-box-shadow: 0px 0px 21px 0px rgba(152, 152, 152, 0.23);
   box-shadow: 0px 0px 21px 0px rgba(152, 152, 152, 0.23); }
   .single-pricing.active .pricing-body .pricing-btn .main-btn {
-    background-color: #2c3c54;
-    color: #fff; }
+    background-color: var(--secondary-text-color);
+    color: var(--primary-bg-color); }
     .single-pricing.active .pricing-body .pricing-btn .main-btn:hover {
-      background-color: #fff;
-      color: #2c3c54; }
+      background-color: var(--secondary-bg-color);
+      color: var(--primary-text-color); }
 
 /*===========================
        7.BLOG css 
@@ -1209,7 +1218,7 @@ p {
     position: absolute;
     bottom: 0;
     left: 0;
-    background-color: #fff;
+    background-color: var(--secondary-bg-color);
     padding: 25px;
     -webkit-transition: all 0.3s ease-out 0s;
     -moz-transition: all 0.3s ease-out 0s;
@@ -1228,7 +1237,7 @@ p {
       -ms-transition: all 0.3s ease-out 0s;
       -o-transition: all 0.3s ease-out 0s;
       transition: all 0.3s ease-out 0s;
-      color: #32333c; }
+      color: var(--primary-text-color); }
       @media (max-width: 767px) {
         .single-blog .blog-content .blog-title a {
           font-size: 18px; } }
@@ -1249,9 +1258,9 @@ p {
   .single-blog:hover .blog-content {
     background-color: #2c3c54; }
     .single-blog:hover .blog-content .blog-title a {
-      color: #fff; }
+      color: var(--secondary-bg-color); }
     .single-blog:hover .blog-content span {
-      color: #fff; }
+      color: var(--secondary-bg-color); }
 
 /*===========================
        8.CONTACT css 
@@ -1266,7 +1275,7 @@ p {
     padding-bottom: 80px; } }
 
 .contact-box {
-  background-color: #fff;
+  background-color: var(--secondary-bg-color);
   border: 1px solid #ddd;
   padding: 30px 35px;
   -webkit-transition: all 0.3s ease-out 0s;
@@ -1282,7 +1291,7 @@ p {
       padding: 30px 25px; } }
   .contact-box .contact-icon i {
     font-size: 48px;
-    color: #2c3c54; }
+    color: var(--primary-text-color); }
   .contact-box .contact-content {
     margin-top: 15px; }
     .contact-box .contact-content .contact-title {
@@ -1839,3 +1848,13 @@ p.form-message.success, p.form-message.error {
   opacity: 0;
 }
 /*# sourceMappingURL=style.css.map */
+
+.gray-bg {
+	background: var(--graybg);
+}
+.white-bg {
+	background: var(--secondary-bg-color);
+}
+.black-bg {
+	background: #222;
+}
